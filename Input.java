@@ -233,7 +233,7 @@ public class Input extends Display implements ActionListener{
             try{
                 if(!firstPick) nextFormation();//OTHERWISE, PICKING A POSITION FOR NEXT FORMATION
                 else initialFormation();//IF PICKING FOR INITIAL STARTING POSITIONS
-            }catch(IOException exception) { System.out.println("\n\n\n\n CHLOE FIX ME \n\n\n\n\n"); }
+            }catch(IOException exception) { System.out.println("\n\n\n\n FIX ME \n\n\n\n\n"); }
         repaint(); //repaint whole board after each formation
         //Check if they have not yet put in stuff, because then they have option to randomize
         if((dNum==0) && (!firstPick)) bScatter.setVisible(true);
@@ -254,7 +254,7 @@ public class Input extends Display implements ActionListener{
     public void initialFormation() throws IOException{
         //Check that the coordinates will be on stage
             if(!(tmpV>-1) || !(tmpH>-1)) 
-                System.out.println("\n\n\n CHLOE FIX ME \n\n\n\n");
+                System.out.println("\n\n\n FIX ME \n\n\n\n");
             int w=tmpV; 
             int l=tmpH; 
             //System.out.println("inital formation: "+tmpV+" "+tmpH);
@@ -265,7 +265,7 @@ public class Input extends Display implements ActionListener{
     /**nextFormation() is the action (called in actionPerformed) for handling non-intial formations*/
     public void nextFormation(){
         if(!(tmpV>-1) || !(tmpH>-1)) 
-            System.out.println("\n\n\n CHLOE fix pls MEEEEEEEE \n\n\n\n");
+            System.out.println("\n\n\n FIX ME \n\n\n\n");
         int w=tmpV; 
         int l=tmpH; 
         addDancer(w, l);
